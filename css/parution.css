@@ -1,0 +1,104 @@
+#titre {
+    width: 40%;
+    margin-left: 48%;
+    padding: 0;
+}
+
+#barrerecherche {
+    float: right;
+    margin-right: 10%;
+}
+
+#recherche {
+    padding: 5px;
+}
+
+.loupe {
+    vertical-align: bottom;
+    padding: 3.5px;
+    border: 1px solid black;
+    width: 20px
+}
+
+.mainparution {
+    display: flex;
+    width: 70%;
+    margin-left: 25%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.paru h3 {
+    font-family: 'acronymbold', serif;
+}
+
+.paru {
+    width: 26%;
+    padding-top: 20px;
+    margin-top: 50px;
+    text-align: center;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(153, 153, 153, 1);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(153, 153, 153, 1);
+    box-shadow: 0px 3px 6px 0px rgba(153, 153, 153, 1);
+}
+
+h2 a:link {color:#fff;}      /* unvisited link */
+h2 a:visited {color:#fff;}  /* visited link */
+h2 a:hover {color:#fff;}  /* mouse over link */
+h2 a:active {color:#fff;}
+
+
+.paru a {
+    line-height: 5;
+    padding: 8px;
+
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1270px) {
+    .mainparution {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .mainparution {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .mainparution {
+        margin-left: 20%;
+    }
+    .paru {
+        width: 44%;
+    }
+    #titre {
+        margin-left: 35%;
+    }
+}
+
+.paru img {
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .mainparution {
+        flex-direction: column;
+    }
+    #barrerecherche {
+        float: none;
+        text-align: center;
+    }
+    #recherche {
+        margin-left: 5%;
+        width: 48%;
+    }
+    #titre {
+        margin-left: 30%;
+    }
+    .paru {
+        width: 80%;
+    }
+}

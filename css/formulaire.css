@@ -1,0 +1,86 @@
+/* formulaire */
+
+.contact{
+    display: flex;
+    padding-top: 5%;
+
+}
+
+.contactg{
+    width: 45%;
+    padding: 0 2%  0 25%;
+    line-height: 65px;
+}
+.contactg form{
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+.contactg p{
+    font-style: italic;
+}
+.contactg label{
+    display: block;
+    width:150px;
+    text-align:left;
+    font-family: 'acronymregular', serif    ;
+}
+.contactg form{
+    display: flex;
+    flex-direction: column;
+
+}
+.contactg h1{
+    text-align: center;
+}
+
+.texted{
+    width: 40%;
+    margin-top: 150px;
+}
+
+.paragraphe{
+    line-height: 35px;
+    color: #6E6E6E;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(153,153,153,1);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(153,153,153,1);
+    box-shadow: 0px 3px 6px 0px rgba(153,153,153,1);
+}
+
+@media only screen and (max-width: 1271px){
+    .contact{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .texted{
+        width: 80%;
+        margin: 0 auto;
+        text-align: -moz-center;
+    }
+    .contactg{
+        width: 100%;
+        padding: 0 0% 0 0%;
+    }
+
+    .contactg p{
+        text-align: center;
+    }
+
+}
+
+form input[type="submit"] {
+    display: none;
+}
+
+#svgb {
+    width: 100%;
+    margin: 0 0 5% 0%;
+}
+
+
+

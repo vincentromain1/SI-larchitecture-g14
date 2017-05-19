@@ -1,0 +1,671 @@
+@charset "UTF-8";
+
+/*-----FONT-------*/
+
+@font-face {
+    font-family: 'acronymblack';
+    src: url('font/acronym-black-webfont.eot');
+    src: url('font/acronym-black-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-black-webfont.woff2') format('woff2'), url('font/acronym-black-webfont.woff') format('woff'), url('font/acronym-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymbold';
+    src: url('font/acronym-bold-webfont.eot');
+    src: url('font/acronym-bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-bold-webfont.woff2') format('woff2'), url('font/acronym-bold-webfont.woff') format('woff'), url('font/acronym-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymlight_italic';
+    src: url('font/acronym-lightitalic-webfont.eot');
+    src: url('font/acronym-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-lightitalic-webfont.woff2') format('woff2'), url('font/acronym-lightitalic-webfont.woff') format('woff'), url('font/acronym-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymregular';
+    src: url('font/acronym-regular-webfont.eot');
+    src: url('font/acronym-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-regular-webfont.woff2') format('woff2'), url('font/acronym-regular-webfont.woff') format('woff'), url('font/acronym-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'acronymsemibold';
+    src: url('font/acronym-semibold-webfont.eot');
+    src: url('font/acronym-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('font/acronym-semibold-webfont.woff2') format('woff2'), url('font/acronym-semibold-webfont.woff') format('woff'), url('font/acronym-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-----RESET------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-decoration: none;
+}
+
+h3 a:link {color:#000;}      /* unvisited link */
+h3 a:visited {color:#000;}  /* visited link */
+h3 a:hover {color:#000;}  /* mouse over link */
+h3 a:active {color:#000;}
+
+
+/*--------menu---------*/
+
+a h1, a h2 {
+    text-decoration: none;
+}
+
+nav ul {
+    color: #fff;
+}
+
+
+/*header accueil*/
+
+.header-accueil {
+    width: 80%;
+    height: 80vh;
+    overflow: hidden;
+    padding-top: 10vh;
+    position: relative;
+    float: right;
+    z-index: -40;
+}
+
+.header-accueil img {
+    width: 100%;
+    -webkit-filter: brightness(64%);
+    /* Safari 6.0 - 9.0 */
+    filter: brightness(64%);
+    position: absolute;
+}
+
+.header-accueil h2 {
+    text-align: right;
+    position: relative;
+    color: #fff;
+    font-family: 'acronymbold', sans-serif;
+    font-size: 5.4rem;
+    width: 85%;
+    line-height: 10rem;
+    margin: auto;
+    padding-top: 10%;
+}
+
+
+/*----------------Nos Revues accueil--------------*/
+
+.article-revues {
+    float: left;
+    margin-left: 25%;
+    width: 40%;
+    position: relative;
+}
+
+.article-revues>h2 {
+    font-family: 'acronymbold', sans-serif;
+    font-size: 2.2rem;
+    margin: 12% 0 2% 0;
+}
+
+.article-revues article {
+    position: relative;
+    overflow: hidden;
+    margin: 5% 0;
+}
+
+.article-revues article .info {
+    position: absolute;
+    z-index: 10;
+    margin: 25% 0 0 5%;
+    transform: translateY(-45%);
+    width: 80%
+}
+
+.article-revues article .info h2 {
+    font-family: 'acronymblack', sans-serif;
+    font-size: 4.7rem;
+    color: #fff;
+}
+
+.article-revues article .info p {
+    font-family: 'acronymsemibold', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.article-revues article figure {
+    height: 43vh;
+}
+
+.article-revues article figure img {
+    width: 100%;
+}
+
+.article-revues article figure:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 70%);
+    /* W3C */
+}
+
+
+/*---------------Articles accueil-----------------*/
+
+.aside-actu {
+    position: absolute;
+    z-index: 50;
+    width: 22%;
+    margin: 38.5% 5% 0 72%;
+}
+
+.aside-actu h2 {
+    font-family: 'acronymbold', sans-serif;
+    font-size: 4.2rem;
+    color: #fff;
+}
+
+.aside-actu article {
+    overflow: hidden;
+    background-color: #fff;
+    width: 95%;
+    height: 50vh;
+    margin: 8% 0;
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=180, Strength=4);
+}
+
+.aside-actu article p {
+    font-family: acronymlight_italic, sans-serif;
+    color: #9B9B9B;
+    font-size: 1.2rem;
+    margin: 3% 10%;
+}
+
+.aside-actu article figure {
+    height: 50%;
+    overflow: hidden;
+}
+
+.aside-actu article figure img {
+    width: 100%;
+}
+
+.aside-actu article p:last-child {
+    margin: 0 10% 0 10%;
+}
+
+.aside-actu article h3 {
+    font-family: 'acronymsemibold', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin: 8% 10% 3% 10%;
+}
+
+
+/*----------------------TARIFS--------------------*/
+
+.tarif-content {
+    width: 33%;
+    height: 55vh;
+    margin: 0 0 0 22%;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.tarif-content h2 {
+    font-family: acronymbold;
+    font-size: 3.6rem;
+    padding: 18% 0 0 7%;
+}
+
+.tarif-content ul {
+    clear: both;
+    margin: 5% 5% 5% 0;
+    border-bottom: solid #EBEBEB 1px;
+    overflow: auto;
+}
+
+.tarif-content ul li {
+    list-style-type: none;
+    float: right;
+    font-family: acronymbold, sans-serif;
+    font-size: 2rem;
+    margin: 0 2%;
+}
+
+.tarif-content ul li:first-child {
+    color: #9b9b9b
+}
+
+.tarif-content p {
+    font-family: acronymbold, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5% 0;
+    color: #585858;
+}
+
+.tarif-content table {
+    width: 90%;
+    margin: auto;
+    font-family: acronymregular, sans-serif;
+    font-size: 1.4rem;
+    border: none;
+}
+
+.tarif-content table tbody tr {}
+
+.tarif-content table tbody tr td:first-child {
+    font-family: acronymsemibold, sans-serif;
+}
+
+.tarif-content table tbody tr:nth-child(even) {
+    background-color: #D8D8D8;
+}
+
+.img-couverture-achat {
+    margin: -100% 0 0 70%;
+    width: 20%;
+}
+
+
+/*------------------------formulaire------*/
+
+.form {
+    width: 80%;
+    margin: 0 0 0 20%;
+}
+
+.form ul {
+    width: 95%;
+    margin: 10% 0 6% 5%;
+    overflow: auto;
+    border-bottom: solid #B9B9B9 1px;
+}
+
+.form ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0 2%;
+    font-family: acronymbold, sans-serif;
+    font-size: 2rem;
+}
+
+.form ul .non-active-tarif {
+    color: #9b9b9b;
+    text-decoration: none;
+}
+
+.form form {
+    margin: 0 0 0 28%;
+    width: 40%;
+    clear: both;
+}
+
+.form fieldset {
+    border: none;
+    padding: 0;
+    margin: 5%;
+}
+
+.form legend {
+    font-family: acronymbold, sans-serif;
+    font-size: 1.8rem;
+    margin: 2% 0;
+}
+
+.form label {
+    font-family: 'acronymregular', sans-serif;
+    font-size: 1.4rem;
+    color: #9b9b9b;
+}
+
+.form input {
+    display: block;
+    margin: 1% 0 2% 0;
+    font-family: acronymlight, sans-serif;
+    font-size: 1.2rem;
+    color: #5B5B5B;
+    width: 80%;
+    height: 3vh;
+    border: none;
+    -moz-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=3);
+}
+
+.form input:focus {
+    border-bottom: solid #3EBED2 1px;
+    outline: none;
+}
+
+.form input[type='text'] {
+    padding: 0 2%;
+}
+
+.form input[type='text']:focus {
+    color: #3ebed2;
+}
+
+.form input[name='postal'] {
+    width: 20%;
+}
+
+.form input[name='ville'] {
+    width: 40%;
+}
+
+.form input[name='pays'] {
+    width: 40%;
+}
+
+.form input[name='numero'] {
+    width: 20%;
+}
+
+.form .radio-inline__input {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+
+.form .radio-inline__label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 1px;
+    transition: all .3s;
+}
+
+.form .radio-inline__input:checked+.radio-inline__label {
+    background: #3ebed2;
+    color: #fff;
+    box-shadow: 0px 0px 2px 0px #3ebed2;
+}
+
+.form form input[type="submit"] {
+    display: none;
+}
+
+#svgb {
+    width: 30%;
+    margin: 0 0 23% 10%;
+}
+
+
+/*------------------ARTICLE------------*/
+
+
+/*header accueil*/
+
+.header-article {
+    width: 80%;
+    padding-top: 10vh;
+    position: relative;
+    float: right;
+    z-index: -40;
+}
+
+.header-article div {
+    height: 40vh;
+    overflow: hidden;
+}
+
+.header-article img {
+    width: 100%;
+}
+
+.header-article h2 {
+    font-family: acronymbold, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.header-article h3 {
+    font-family: acronymbold, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+}
+
+.header-article p {
+    font-family: acronymregular, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*---------------article content----------*/
+
+.article-content {
+    float: right;
+    width: 75%;
+    margin: 5vh;
+}
+
+.article-content div {
+    overflow: auto;
+}
+
+.article-content #article-item1 {
+    width: 100%;
+}
+
+.article-content #article-item1 p {
+    width: auto;
+}
+
+.article-content div img {
+    width: 40%;
+    float: right;
+    margin: 5vh;
+}
+
+.article-content div:nth-child(odd) img {
+    float: left;
+    width: 30%;
+}
+
+.article-content div:nth-child(odd) p {
+    float: right;
+    width: 40%;
+}
+
+.article-content div p {
+    font-family: acronym, sans-serif;
+    font-size: 2rem;
+    padding: 6rem;
+    color: #9b9b9b;
+    width: 30%;
+    margin: 3vh;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*____________MEDIAQUERIES___________*/
+
+@media (max-width: 1270px) {
+    .article-content {
+        overflow: hidden;
+        float: right;
+        width: 70%;
+        margin: 5vh;
+    }
+    .article-content div {}
+    .article-content div img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) p {
+        float: none;
+        width: 70%;
+    }
+    .article-content div p {
+        font-family: acronym, sans-serif;
+        font-size: 2rem;
+        padding: 6rem;
+        color: #9b9b9b;
+        width: 70%;
+        margin: 3vh;
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media (max-width: 780px) {
+    .article-content {
+        overflow: hidden;
+        float: right;
+        width: 100%;
+        margin: 5vh;
+    }
+    .article-content div {
+        overflzow: auto;
+    }
+    .article-content div img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) img {
+        width: 83%;
+        float: none;
+        margin: 0 0 0 7vh;
+    }
+    .article-content div:nth-child(odd) p {
+        float: none;
+        width: 70%;
+    }
+    .article-content div p {
+        font-family: acronym, sans-serif;
+        font-size: 2rem;
+        padding: 6rem;
+        color: #9b9b9b;
+        width: 70%;
+        margin: 3vh;
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+        -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-article {
+        width: 100%;
+    }
+    #svgb {
+        width: 30vw;
+    }
+    .img-couverture-achat {
+        margin: 10% 0 0 36%;
+        width: 45%;
+    }
+    .tarif-content {
+        width: 75%;
+    }
+    .form form {
+        width: 90%;
+        margin: auto 0;
+    }
+    .form input {
+        width: 50%;
+    }
+    .form input[name='ville'] {
+        width: 50%;
+    }
+    .form input[name='pays'] {
+        width: 50%;
+    }
+    .form input[name='numero'] {
+        width: 50%;
+    }
+
+    .aside-actu{
+        z-index: 0;
+    }
+}
+
+/*------------partenaires--------------*/
+
+.partenaire-flex h3 {
+    font-family: acronymbold, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 5vh 0 2vh 0;
+}
+
+#partenaire-liste {
+    margin-bottom: 10vh;
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+#partenaire-liste .partenaire-flex {
+    font-family: acronym, sans-serif;
+    font-size: 2rem;
+    color: #9b9b9b;
+    width: 40%;
+    margin: 2.5% 5%;
+    float: left;
+    box-shadow: none;
+    padding: 0;
+}
+
+.partenaire-flex h3 {
+    color: #000;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+#partenaire-liste .partenaire-flex p {
+    box-shadow: none;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #202020;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    margin-top: 10vh;
+}
